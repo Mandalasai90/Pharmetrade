@@ -48,5 +48,5 @@ jobs:
 
             docker ps -a --format '{{.Names}}' | grep -w $CONTAINER && docker rm -f $CONTAINER || true
             docker pull $IMAGE
-            docker run -d -p 5473:5473 --name $CONTAINER $IMAGE
+            docker run -d -p 5173:5173 --name $CONTAINER $IMAGE
           EOF
